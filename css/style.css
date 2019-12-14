@@ -279,7 +279,7 @@ button:focus{
 	text-align : center;
 }
 .pulse i{
-	color: #ffffff;
+	color: #fff0b0;
 	font-size: 38px;
 }
 
@@ -366,7 +366,7 @@ button:focus{
 }
 
 .navbar-toggler:hover span{
-	background: #881228;
+	background: #fff0b0;
 }
 
 
@@ -442,7 +442,7 @@ button:focus{
 	font-family: 'Engagement', cursive;
 }
 .lbox-details a.btn{
-	background: #fff0b0;
+	background: #63c7bd;
 	padding: 10px 20px;
 	font-size: 20px;
 	text-transform: uppercase;
