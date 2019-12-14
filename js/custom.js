@@ -1,171 +1,142 @@
-/******************************************
-    Version: 1.0
-/****************************************** */
-
 (function($) {
     "use strict";
-
 	
-	// Smooth scrolling using jQuery easing
-	  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-		  var target = $(this.hash);
-		  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		  if (target.length) {
-			$('html, body').animate({
-			  scrollTop: (target.offset().top - 54)
-			}, 1000, "easeInOutExpo");
-			return false;
-		  }
+	/* ..............................................
+	Loader 
+    ................................................. */
+	
+	$(window).on('load', function() { 
+		$('.preloader').fadeOut(); 
+		$('#preloader').delay(550).fadeOut('slow'); 
+		$('body').delay(450).css({'overflow':'visible'});
+	});
+    	
+	/* ..............................................
+    Navbar Bar
+    ................................................. */
+	
+	$('.navbar-nav .nav-link').on('click', function() {
+		var toggle = $('.navbar-toggler').is(':visible');
+		if (toggle) {
+			$('.navbar-collapse').collapse('hide');
 		}
-	  });
+	});
 	
-    // Closes responsive menu when a scroll trigger link is clicked
-	  $('.js-scroll-trigger').click(function() {
-		$('.navbar-collapse').collapse('hide');
-	  });
-
-	// Activate scrollspy to add active class to navbar items on scroll
-	  $('body').scrollspy({
-		target: '#mainNav',
-		offset: 56
-	  });
-
-	// Collapse Navbar
-	  var navbarCollapse = function() {
-		if ($("#mainNav").offset().top > 100) {
-		  $("#mainNav").addClass("navbar-shrink");
+	/* ..............................................
+    Fixed Menu
+    ................................................. */
+    
+	$(window).on('scroll', function () {
+		if ($(window).scrollTop() > 50) {
+			$('.top-header').addClass('fixed-menu');
 		} else {
-		  $("#mainNav").removeClass("navbar-shrink");
+			$('.top-header').removeClass('fixed-menu');
 		}
-	  };
-	// Collapse now if page is not at top
-	  navbarCollapse();
-	  // Collapse the navbar when page is scrolled
-	  $(window).scroll(navbarCollapse);
+	});
+	
+	/* ..............................................
+    ResponsiveSlides
+    ................................................. */
+	
+	$(".rslides").responsiveSlides({
+	  auto: true,             // Boolean: Animate automatically, true or false
+	  speed: 500,            // Integer: Speed of the transition, in milliseconds
+	  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+	  pager: false,           // Boolean: Show pager, true or false
+	  nav: false,             // Boolean: Show navigation, true or false
+	  random: false,          // Boolean: Randomize the order of the slides, true or false
+	  pause: false,           // Boolean: Pause on hover, true or false
+	  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+	  prevText: "Previous",   // String: Text for the "previous" button
+	  nextText: "Next",       // String: Text for the "next" button
+	  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+	  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+	  manualControls: "",     // Selector: Declare custom pager navigation
+	  namespace: "rslides",   // String: Change the default namespace used
+	  before: function(){},   // Function: Before callback
+	  after: function(){}     // Function: After callback
+	});
 
-	// Hide navbar when modals trigger
-	  $('.portfolio-modal').on('show.bs.modal', function(e) {
-		$(".navbar").addClass("d-none");
-	  })
-	  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
-		$(".navbar").removeClass("d-none");
-	  })
-
-    // Scroll to top  		
-	if ($('#scroll-to-top').length) {
-		var scrollTrigger = 100, // px
-			backToTop = function () {
-				var scrollTop = $(window).scrollTop();
-				if (scrollTop > scrollTrigger) {
-					$('#scroll-to-top').addClass('show');
-				} else {
-					$('#scroll-to-top').removeClass('show');
+	/* ..............................................
+    TimeLine
+    ................................................. */
+	$('.timeLine').timeLine({
+        mainColor: '#890025',
+        opacity: '0.85',
+        lineColor: '#890025'
+    });
+	
+	
+	
+	/* ..............................................
+    Gallery
+    ................................................. */
+	
+	$(document).ready(function() {
+		$('.popup-gallery').magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			mainClass: 'mfp-img-mobile',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			},
+			image: {
+				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+				titleSrc: function(item) {
+					return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
 				}
-			};
-		backToTop();
-		$(window).on('scroll', function () {
-			backToTop();
+			}
 		});
-		$('#scroll-to-top').on('click', function (e) {
-			e.preventDefault();
-			$('html,body').animate({
-				scrollTop: 0
-			}, 700);
-		});
+	});
+	
+	/* ..............................................
+    Smooth Scroll
+    ................................................. */
+	
+	$('a[href*="#"]:not([href="#"])').on('click', function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+		  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html,body').animate({
+				  scrollTop: target.offset().top - 65,
+				  }, 1000);
+				  return false;
+			  }
+		}
+	});
+	
+	/* ..............................................
+    Countdown Clock
+    ................................................. */
+	function makeTimer() {
+		var endTime = new Date("01 June 2019 10:45:00 GMT+01:00");			
+		endTime = (Date.parse(endTime) / 1000);
+
+		var now = new Date();
+		now = (Date.parse(now) / 1000);
+
+		var timeLeft = endTime - now;
+
+		var days = Math.floor(timeLeft / 86400); 
+		var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+		var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+		var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+		if (hours < "10") { hours = "0" + hours; }
+		if (minutes < "10") { minutes = "0" + minutes; }
+		if (seconds < "10") { seconds = "0" + seconds; }
+
+		$("#days").html(days + "<h6>Days</h6>");
+		$("#hours").html(hours + "<h6>Hrs</h6>");
+		$("#minutes").html(minutes + "<h6>Min</h6>");
+		$("#seconds").html(seconds + "<h6>Sec</h6>");
 	}
-	
-	// Banner 
-	
-    $('.heading').height( $(window).height() );
-	$('.parallaxie').parallaxie();
-	
-	
-	
-    // LOADER
-    $(window).load(function() {
-        $("#preloader").on(500).fadeOut();
-        $(".preloader").on(600).fadeOut("slow");
-    });
+	setInterval(function() { makeTimer(); }, 1000);
 
-	// Gallery Filter
-        var Container = $('.container');
-        Container.imagesLoaded(function () {
-            var portfolio = $('.gallery-menu');
-            portfolio.on('click', 'button', function () {
-                $(this).addClass('active').siblings().removeClass('active');
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({
-                    filter: filterValue
-                });
-            });
-            var $grid = $('.gallery-list').isotope({
-                itemSelector: '.gallery-grid'
-            });
-
-        });
-	
-    // FUN FACTS   
-    function count($this) {
-        var current = parseInt($this.html(), 10);
-        current = current + 50; /* Where 50 is increment */
-        $this.html(++current);
-        if (current > $this.data('count')) {
-            $this.html($this.data('count'));
-        } else {
-            setTimeout(function() {
-                count($this)
-            }, 30);
-        }
-    }
-    $(".stat_count, .stat_count_download").each(function() {
-        $(this).data('count', parseInt($(this).html(), 10));
-        $(this).html('0');
-        count($(this));
-    });
 
 	
-	// Skillbar   
-	
-	$('.skillbar').skillBars({
-		from: 0,
-		speed: 4000, 
-		interval: 100,
-	}); 
-	
-	
-    // CONTACT
-    jQuery(document).ready(function() {
-        $('#contactform').submit(function() {
-            var action = $(this).attr('action');
-            $("#message").slideUp(750, function() {
-                $('#message').hide();
-                $('#submit')
-                    .after('<img src="images/ajax-loader.gif" class="loader" />')
-                    .attr('disabled', 'disabled');
-                $.post(action, {
-                        first_name: $('#first_name').val(),
-                        last_name: $('#last_name').val(),
-                        email: $('#email').val(),
-                        phone: $('#phone').val(),
-                        select_service: $('#select_service').val(),
-                        select_price: $('#select_price').val(),
-                        comments: $('#comments').val(),
-                        verify: $('#verify').val()
-                    },
-                    function(data) {
-                        document.getElementById('message').innerHTML = data;
-                        $('#message').slideDown('slow');
-                        $('#contactform img.loader').fadeOut('slow', function() {
-                            $(this).remove()
-                        });
-                        $('#submit').removeAttr('disabled');
-                        if (data.match('success') != null) $('#contactform').slideUp('slow');
-                    }
-                );
-            });
-            return false;
-        });
-    });
-
-})(jQuery);
+}(jQuery));
