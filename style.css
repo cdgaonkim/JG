@@ -312,12 +312,12 @@ a img.aligncenter {
 
 
 .fat-nav{
-	background: url(uploads/nav-bg.jpg) no-repeat center top;
+	
 	background-size: cover;
 }
 
 #mainNav.navbar-dark{
-	background: #ffffff;
+	background: #030207;
 }
 
 .hamburger{
@@ -354,7 +354,7 @@ a img.aligncenter {
 .fat-nav li{
 	width: 14.28%;
 	float: left;
-	background: #e45050;
+	background: #030207;
 	height: 100%;
 }
 
