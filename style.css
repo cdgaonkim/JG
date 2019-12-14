@@ -19,6 +19,12 @@
 @import url(css/prettyPhoto.css);
 @import url(css/owl.carousel.css);
 @import url(css/font-awesome.min.css);
+@font-face {
+    font-family: underland;
+    src: url(underland.tff) format('opentype');
+ 
+}
+
 
 /*------------------------------------------------------------------
     SKELETON
@@ -379,17 +385,20 @@ a img.aligncenter {
     opacity: .6;
 }
 .heading{
-	color: #fff;
+	color: #fff0b0;
 	display: table-cell;
 	vertical-align: middle;
 	position: relative;
-	z-index: 1;
+    z-index: 1;
+    font-family: 'underland';
 }
 .heading h1{
-	color: #ffffff;
-	font-weight: 700;
+	color: #fff0b0;
 	font-size: 62px;
-	text-transform: uppercase;
+  
+    font-family: 'underland';
+  
+
 }
 .heading p{
 	font-size: 18px;
