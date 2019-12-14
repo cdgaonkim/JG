@@ -100,7 +100,7 @@ h6 a:hover {
 }
 
 a {
-    color: #1f1f1f;
+    color: #585858;
     text-decoration: none;
     outline: none;
 }
@@ -321,13 +321,13 @@ button:focus{
 .top-header.fixed-menu{
 	width: 100%;
 	position: fixed;
-	box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+	box-shadow: 0px 3px 6px 3px rgba(194, 194, 194, 0.06);
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 	-webkit-animation-name: fadeInDown;
-	animation-name: fadeInDown;
+	animation-name: fadeInDown;		
 	background: #030207;
 	z-index: 20;
 }
@@ -343,7 +343,7 @@ button:focus{
 	transition: all 0.2s linear;
 }
 .navbar-toggler span{
-	background: #fff0b0;
+	background: #030207;
 	display: block;
 	width: 25px;
 	height: 2px;
