@@ -308,12 +308,12 @@ button:focus{
 }
 
 .top-header .navbar .navbar-collapse ul li a.active{
-	background: #881228;
+	background: #030207;
 	color: #fff0b0;
 }
 
 .top-header .navbar .navbar-collapse ul li a:hover{
-	background: #890025;
+	background: #030207;
 	color: #fff0b0;
 }
 
@@ -333,7 +333,7 @@ button:focus{
 }
 
 .navbar-toggler{
-	border: 1px solid #61D2B4;
+	border: 1px solid #fff0b0;
 	border-radius: 0;
 	margin: 16px 15px;
 	padding: 10px 10px;
@@ -343,7 +343,7 @@ button:focus{
 	transition: all 0.2s linear;
 }
 .navbar-toggler span{
-	background: #61D2B4;
+	background: #fff0b0;
 	display: block;
 	width: 25px;
 	height: 2px;
@@ -362,7 +362,7 @@ button:focus{
 }
 
 .navbar-toggler:hover{
-	border: 1px solid #881228;
+	border: 1px solid #fff0b0;
 }
 
 .navbar-toggler:hover span{
@@ -442,7 +442,7 @@ button:focus{
 	font-family: 'Engagement', cursive;
 }
 .lbox-details a.btn{
-	background: #63c7bd;
+	background: #fff0b0;
 	padding: 10px 20px;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -1034,7 +1034,7 @@ button:focus{
 	transition: all 0.3s;
 }
 .submit-button .btn-common:hover{
-	background-color: #528780;
+	background-color: #fff0b0;
 }
 
 .custom-select{
