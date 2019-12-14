@@ -100,7 +100,7 @@ h6 a:hover {
 }
 
 a {
-    color: #1f1f1f;
+    color: #585858;
     text-decoration: none;
     outline: none;
 }
@@ -163,7 +163,7 @@ button:focus{
     right: 0;
     bottom: 0;
     left: 0;
-    background: #881228;
+    background: #030207;
     z-index: 11000;
     position: fixed;
     display: block;
@@ -205,7 +205,7 @@ button:focus{
 }
 
 .pulse h3{
-	color: #ffffff;
+	color: #fff0b0;
 	font-family: 'Engagement', cursive;
 	font-size: 38px;
 }
@@ -279,7 +279,7 @@ button:focus{
 	text-align : center;
 }
 .pulse i{
-	color: #ffffff;
+	color: #fff0b0;
 	font-size: 38px;
 }
 
@@ -292,7 +292,7 @@ button:focus{
 }
 
 .top-header{
-	background: #ffffff;
+	background: #030207;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -308,32 +308,32 @@ button:focus{
 }
 
 .top-header .navbar .navbar-collapse ul li a.active{
-	background: #881228;
-	color: #ffffff;
+	background: #030207;
+	color: #fff0b0;
 }
 
 .top-header .navbar .navbar-collapse ul li a:hover{
-	background: #890025;
-	color: #ffffff;
+	background: #030207;
+	color: #fff0b0;
 }
 
 
 .top-header.fixed-menu{
 	width: 100%;
 	position: fixed;
-	box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+	box-shadow: 0px 3px 6px 3px rgba(194, 194, 194, 0.06);
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 	-webkit-animation-name: fadeInDown;
-	animation-name: fadeInDown;
-	background: #fff;
+	animation-name: fadeInDown;		
+	background: #030207;
 	z-index: 20;
 }
 
 .navbar-toggler{
-	border: 1px solid #61D2B4;
+	border: 1px solid #030207;
 	border-radius: 0;
 	margin: 16px 15px;
 	padding: 10px 10px;
@@ -343,7 +343,7 @@ button:focus{
 	transition: all 0.2s linear;
 }
 .navbar-toggler span{
-	background: #61D2B4;
+	background: #fff0b0;
 	display: block;
 	width: 25px;
 	height: 2px;
@@ -362,11 +362,11 @@ button:focus{
 }
 
 .navbar-toggler:hover{
-	border: 1px solid #881228;
+	border: 1px solid #fff0b0;
 }
 
 .navbar-toggler:hover span{
-	background: #881228;
+	background: #fff0b0;
 }
 
 
@@ -1034,7 +1034,7 @@ button:focus{
 	transition: all 0.3s;
 }
 .submit-button .btn-common:hover{
-	background-color: #528780;
+	background-color: #fff0b0;
 }
 
 .custom-select{
