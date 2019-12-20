@@ -562,9 +562,11 @@ button:focus{
 	margin-bottom: 30px;
 }
 .title-box h2{
-	font-size: 60px;
-	font-family: 'Engagement', cursive;
-	color: #222222;
+	font-size: 20px;
+	font-family: 'Noto Serif KR Light';
+	color: #fff0b0;
+	text-transform: uppercase;
+
 }
 .title-box h2 span{
 	color: #881228;
