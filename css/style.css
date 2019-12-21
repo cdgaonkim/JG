@@ -556,7 +556,7 @@ button:focus{
 
 
 .about-box{
-	padding: 70px 0px;
+	padding: 0px 0px;
 	background: url(../images/ptn-bg.jpg);
 }
 
@@ -1012,11 +1012,29 @@ button:focus{
 .contact-title{
 	padding-bottom: 30px;
 }
+
 .groom{
 	padding-bottom: 10px;
 }
+
 .bride{
 	padding-bottom: 30px;
+}
+
+.groom-f{
+	
+}
+
+.groom-m{
+	
+}
+
+.bride-f{
+	
+}
+
+.bride-m{
+	
 }
 
 .contact-buttona{
