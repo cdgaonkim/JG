@@ -151,6 +151,9 @@ button:focus{
     opacity: 1;
 }
 
+.img {
+	display: block; margin: 0px auto; 
+}
 
 /*------------------------------------------------------------------
     LOADER 
@@ -206,8 +209,8 @@ button:focus{
 
 .pulse h3{
 	color: #fff0b0;
-	font-family: 'Underland', cursive;
-	font-size: 38px;
+	font-family: 'Underland';
+	font-size: 24px;
 }
 
 
@@ -1006,33 +1009,39 @@ button:focus{
 /*------------------------------------------------------------------
     Contact
 -------------------------------------------------------------------*/
+.contact-title{
+	padding-bottom: 30px;
+}
+.groom{
+	padding-bottom: 10px;
+}
+.bride{
+	padding-bottom: 30px;
+}
 
 .contact-buttona{
-	padding-top: 30px;
+	float: left;
+
 }
 
 .contact-button1{
-    padding-left: 395px;
-	width: 442px;
-	float: left;
+	
 }
 
 .contact-button2{
 	padding-left: 10px;
-    width: 57px;
-	float: left;
+
 }
 
 .contact-button3{
-	padding-left: 135px;
-    width: 182px;
+
 	float: left;
 }
 
 .contact-button4{
 	padding-left: 10px;
     width: 57px;
-	float: left;
+
 }
 
 .contact-buttonb{
@@ -1082,7 +1091,7 @@ button:focus{
 
 .contact-box{
 	
-	padding: 300px 0px;
+	padding: 200px 0px;
 }
 .contact-block{}
 
