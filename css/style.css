@@ -1189,6 +1189,12 @@ select.form-control:not([size]):not([multiple]){
 .map{
 	text-align: center;
 }
+.map-info{
+	padding-top: 20px;
+}
+
+
+
 
 
 
