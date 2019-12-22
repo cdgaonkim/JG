@@ -825,7 +825,9 @@ button:focus{
 
 
 .gallery-box{
-	padding-top: 0px;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background: url(../images/ptn-bg3.jpg);
 }
 
 .gallery-box ul{
@@ -896,8 +898,8 @@ button:focus{
 
 .wedding-box{
 	padding-top: 70px;
-	padding-bottom: 70px;
-	background: url(../images/ptn-bg.jpg);
+	padding-bottom: 50px;
+	
 }
 
 .serviceBox{
@@ -1019,6 +1021,9 @@ button:focus{
 .contact-title{
 	padding-bottom: 30px;
 }
+.contact-title-image{
+	padding-bottom: 10px;
+}
 
 .groom{
 	padding-bottom: 10px;
@@ -1116,7 +1121,7 @@ button:focus{
 
 .contact-box{
 	
-	padding: 200px 0px;
+	padding: 220px 0px;
 }
 .contact-block{}
 
@@ -1199,6 +1204,7 @@ select.form-control:not([size]):not([multiple]){
 }
 .map-info{
 	padding-bottom: 120px;
+	
 }
 
 
