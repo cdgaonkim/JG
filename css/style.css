@@ -209,8 +209,8 @@ button:focus{
 
 .pulse h3{
 	color: #fff0b0;
-	font-family: 'Underland';
-	font-size: 24px;
+	font-family: 'Engagement';
+	font-size: 38px;
 }
 
 
@@ -566,7 +566,7 @@ button:focus{
 }
 .title-box h2{
 	font-size: 20px;
-	font-family: 'Noto Serif KR Light';
+	font-family: 'Engagement';
 	color: #fff0b0;
 	text-transform: uppercase;
 
@@ -582,7 +582,7 @@ button:focus{
 }
 .title-box2 h2{
 	font-size: 20px;
-	font-family: 'Noto Serif KR Light';
+	font-family: 'Engagement';
 	color: #030207;
 	text-transform: uppercase;
 
@@ -821,7 +821,7 @@ button:focus{
 -------------------------------------------------------------------*/
 
 .gallery-box{
-	padding-top: 400px;
+	padding-top: 0px;
 }
 
 .gallery-box ul{}
