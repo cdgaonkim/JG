@@ -22,7 +22,7 @@
 
 body {
     color: #666666;
-    font-size: 15px;
+    font-size: 8px;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.80857;
 }
@@ -824,7 +824,9 @@ button:focus{
 	padding-top: 0px;
 }
 
-.gallery-box ul{}
+.gallery-box ul{
+
+}
 .gallery-box ul li{
 	position: relative;
 	width: 25%;
@@ -889,7 +891,8 @@ button:focus{
 -------------------------------------------------------------------*/
 
 .wedding-box{
-	padding: 70px 0px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 	background: url(../images/ptn-bg.jpg);
 }
 
@@ -1170,7 +1173,7 @@ select.form-control:not([size]):not([multiple]){
 
 .footer-box{
 	background: #292f35;
-	padding: 20px 0;
+	padding;
 }
 
 .footer-box .footer-company-name{
@@ -1180,6 +1183,7 @@ select.form-control:not([size]):not([multiple]){
 }
 
 .footer-box .footer-company-name a{
+	font-size: 8px;
 	color: #881228;
 }
 .footer-box .footer-company-name a:hover{
