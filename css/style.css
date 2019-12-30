@@ -1028,96 +1028,38 @@ button:focus{
 }
 
 .groom{
+	
 	padding-bottom: 10px;
 }
 
 .bride{
-	padding-bottom: 30px;
+	padding-top: 15px;	
+	padding-bottom: 10px;
 }
 
 .groom-f{
-	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 3px;
 }
 
 .groom-m{
-	padding-bottom: 10px;
+	padding-top: 10px;	
+	padding-bottom: 3px;
 }
 
 .bride-f{
-	padding-bottom: 10px;
+	padding-top: 10px;	
+	padding-bottom: 3px;
 }
 
 .bride-m{
-	padding-bottom: 10px;
+	padding-top: 10px;	
+	padding-bottom: 3px;
 }
 
-.contact-buttona{
-	float: left;
+.contact-button{
+	text-align: center;
 
-}
-
-.contact-button1{
-	
-}
-
-.contact-button2{
-	padding-left: 10px;
-
-}
-
-.contact-button3{
-
-	float: left;
-}
-
-.contact-button4{
-	padding-left: 10px;
-    width: 57px;
-
-}
-
-.contact-buttonb{
-	padding-top: 25px;
-}
-
-.contact-button5{
-    padding-left: 348px;
-	float: left;
-}
-
-.contact-button6{
-	padding-left: 8px;
-	float: left;
-}
-
-.contact-button7{
-	padding-left: 45px;
-	float: left;
-}
-
-.contact-button8{
-	padding-left: 8px;
-	float: left;
-}
-
-.contact-button9{
-    padding-left: 45px;
-	float: left;
-}
-
-.contact-button10{
-	padding-left: 8px;
-	float: left;
-}
-
-.contact-button11{
-	padding-left: 45px;
-	float: left;
-}
-
-.contact-button12{
-	padding-left: 8px;
-	float: left;
 }
 
 
@@ -1207,6 +1149,7 @@ select.form-control:not([size]):not([multiple]){
 	text-align: center;
 }
 .map-info{
+	padding-top: 30px;
 	padding-bottom: 120px;
 	
 }
