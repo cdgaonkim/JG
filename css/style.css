@@ -826,9 +826,9 @@ button:focus{
 
 .gallery-box{
 	padding-top: 90px;
-	padding-bottom: 70px;
+	padding-bottom: 45px;
 
-	background: url(../images/ptn-bg4d.jpg) no-repeat top/cover; 
+	background: url(../images/ptn-bg4c.jpg) no-repeat top/cover; 
 
 }
 
@@ -900,7 +900,8 @@ button:focus{
 
 .wedding-box{
 	padding-top: 70px;
-	padding-bottom: 50px;
+	padding-bottom: 15px;
+	background: url(../images/ptn-bg6.jpg);
 	
 }
 
@@ -1038,7 +1039,7 @@ button:focus{
 }
 
 .groom-f{
-	padding-top: 10px;
+	padding-top: 30px;
 	padding-bottom: 3px;
 }
 
