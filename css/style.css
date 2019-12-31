@@ -1067,10 +1067,9 @@ button:focus{
 
 
 .contact-box{
-	height: 100vh;
 	background: url(../images/ptn-bg5.jpg) no-repeat center/cover; 
 	padding-top: 130px;
-	padding-bottom: 220px;
+	padding-bottom: 130px;
 }
 .contact-block{}
 
